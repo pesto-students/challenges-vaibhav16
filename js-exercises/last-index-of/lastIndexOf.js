@@ -9,4 +9,3 @@ function lastIndexOf(x,...args) {
   return pos;
 }
 
-console.log(lastIndexOf(2,4,4,44,2,5));
