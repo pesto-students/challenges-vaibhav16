@@ -27,5 +27,5 @@ function balancedBraces(args) {
 }
 
 
-console.log(balancedBraces("if(a==b x = y;"));
+export {balancedBraces}
 

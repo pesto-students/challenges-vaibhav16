@@ -9,3 +9,4 @@ function lastIndexOf(x,...args) {
   return pos;
 }
 
+export {lastIndexOf}
