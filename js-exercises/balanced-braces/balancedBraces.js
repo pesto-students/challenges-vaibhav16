@@ -11,8 +11,8 @@ function balancedBraces(args) {
       stack.push(args[i])
     }
     else if(args[i]==")" || args[i]=="}" || args[i]=="]" ){
-      let last = stack.pop();
-      if(args[i]!=json[last]){
+      let last = stack.pop(); 
+      if(args[i]!=json[last]){ //Popped Element compared with JSON
         return false;
       }
     }
