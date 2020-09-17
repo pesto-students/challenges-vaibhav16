@@ -18,7 +18,6 @@ function balancedBraces(args) {
     }
   }
 
-  console.log(stack);
 
   if(stack.length!=0)
   return false;
