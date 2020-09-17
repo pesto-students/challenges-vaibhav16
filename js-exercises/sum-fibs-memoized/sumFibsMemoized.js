@@ -8,7 +8,6 @@ function sumFibs(num) {
     p = q;
     q = newVal;
     if(newVal%2!=0 && newVal<=num){
-      console.log(newVal);
       sum+=newVal;
     }
 
@@ -16,6 +15,17 @@ function sumFibs(num) {
   return sum+2; //accounting for the first two 1's
   }
 
-function cacheFunction() {}
+function cacheFunction(n) {
+  let cache = {};
+  if(cache[n]){
+    return cache[n];
+  }
+  else{
+    cache[n]=sumFibs(n);
+    return cache[n]
+  }
+
+}
+
 
 export { sumFibs, cacheFunction };
