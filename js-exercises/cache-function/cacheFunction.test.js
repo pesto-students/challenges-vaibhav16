@@ -10,8 +10,9 @@ describe('cacheFunction', () => {
     expect(cachedFunction(5)).toBe(25);
   });
   it('should cache function results and not rerun the original callback if the same arguments are presented', () => {
-    const foo = jest.fn();
+    const foo = jest.fn;
     const myCachedFunction = cacheFunction(foo);
+    console.log(myCachedFunction(true));
     myCachedFunction(true);
     myCachedFunction(true);
     myCachedFunction(true);
